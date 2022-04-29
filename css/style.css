@@ -1,0 +1,106 @@
+@font-face{
+	font-family: 'diamante-serial-bold', sans-serif;
+	src: url('/font/diamante-serial-bold.ttf');
+}
+
+/*reset*/
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: "Diamante-serial", sans-serif;
+	margin: 0;
+	background-color: var(--color-primary);
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+ul,
+ol,
+section {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a,
+button {
+	text-decoration: none;
+	padding: 0;
+	border: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--color-defaut: #222;
+	--color-primary: #fff;
+	--color-secondary: #081a3e;
+	--color-tertiaire: #223986;
+	--color-header: #dcdbdb;
+}
+
+
+/* Header */
+header {
+	padding-top: 1.5rem;
+	padding-bottom: 1rem;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	background-color: var(--color-primary);
+	width: 100%;
+}
+header img {
+	margin-left: 3rem;
+	width: 6.5rem;
+	height: 2.5rem;
+}
+header ul{
+	font-size: 1.35rem;
+	display: flex;
+	gap: 1rem;
+	text-transform: uppercase;
+	margin-right: 4rem;
+}
+header ul *{
+	color: var(--color-header);
+	line-height: 2rem;
+}
+header ul li:not(li.offre):hover{	
+	cursor: pointer;
+	color: var(--color-secondary);
+	text-decoration: solid underline var(--color-secondary) 0.15rem;
+	transition: color 1s ease-in-out 0s;
+}
+
+header ul li span{
+	position: absolute;
+	padding-right: 2rem;
+}
+header ul li.offre:hover{ 
+	color: var(--color-secondary);
+}
+header ul li.offre{
+	padding-right: 2rem;
+}
+header ul li :nth-last-child(2n){
+	
+}
+header ul li:last-child{
+	
+}
+main img{
+	margin-top: 2rem;
+	width: 100%;
+	z-index: -1;
+}
