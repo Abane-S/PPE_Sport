@@ -1,11 +1,20 @@
 @font-face{
-	font-family: 'diamante-serial-bold', sans-serif;
-	src: url('/font/diamante-serial-bold.ttf');
-	font-family: 'diamante-serial-bold', sans-serif;
-	src: url('/font/diamante/Diamante-Serial-Regular.ttf');
+	font-family: 'diamante-serial-bold';
+	src: url('/font/Diamante-serial-bold.ttf');
+}
+@font-face {
+	font-family: 'diamante-serial-regular';
+	src: url('/font/Diamante-Serial-Regular.ttf');
+}
+@font-face {
+	font-family: 'altice-regular';
+	src: url('/font/altice-regular-webfont.woff') format('woff');
+}
+@font-face {
+	font-family: 'altice-bold';
+	src: url('/font/altice-bold-webfont.woff') format('woff');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Raleway&display=swap');
 
 
 /*reset*/
@@ -81,7 +90,8 @@ header ul{
 }
 header ul li a{
 	color: var(--color-header);
-	font-size: 1.45rem;
+	font-size: 1.35rem;
+	letter-spacing: .05rem;
 }
 header ul li span:hover{
 	padding-bottom: 0.15rem;
@@ -98,10 +108,10 @@ header ul li.offre{
 header ul li.offre a::after{
 	content: '';
 	position: absolute;
-    width: 9px;
-    height: 9px;
+    width: 7px;
+    height: 7px;
     border: 2px solid #c3c3c3;
-    top: 0.2rem;
+    top: 0.25rem;
 	left: 7rem;
     transform: rotate(45deg);
     border-left: none;
@@ -118,7 +128,7 @@ header ul li.offre:hover li.offre{
 header ul li.connecter a{
 	color: var(--color-tertiaire);
 	border: 0.3rem solid var(--color-tertiaire);
-	padding: 0.8rem 2.3rem;
+	padding: 0.6rem 2.3rem;
 }
 header ul li.connecter a:hover{
 	background-color: var(--color-tertiaire);
@@ -128,7 +138,7 @@ header ul li.connecter a:hover{
 header ul li.abonner a{
 	background-color: var(--color-tertiaire);
 	border: 0.3rem solid var(--color-tertiaire);
-	padding: 0.8rem 2.3rem;
+	padding: 0.6rem 2.3rem;
 	color: white;
 	margin-left: 1rem;
 }
@@ -145,7 +155,7 @@ main{
 }
 .sec_accueil{
 	background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/asset/mayweather.jpg);
-    height: calc(85vh - 80px - 50px);
+    height: calc(88vh - 80px - 50px);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size:cover;
@@ -154,7 +164,7 @@ main{
 .sec_accueil .info{
 	position: relative;
 	top: 30%;
-	margin-left: 12%;
+	margin-left: 13%;
 }
 .sec_accueil h3{
 	color: var(--color-white);
@@ -170,7 +180,7 @@ main{
 }
 .sec_accueil h1{
 	text-transform: uppercase;
-	font-size: 4.5rem;
+	font-size: 4rem;
 	color: var(--color-white);
 	position: absolute;
 	top: 9rem;
@@ -178,18 +188,27 @@ main{
 .sec_accueil .info fieldset{
 	position: absolute;
 	border: none;
-	top: 25rem;
-	left: -2rem;
+	top: 23rem;
 	display: flex;
 	gap: 3rem;
 	color: var(--color-white);
 	font-size: 2.5rem;
 	text-transform: uppercase;
+	font-family: 'altice-bold';
 }
 .sec_accueil .info fieldset div{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+.sec_accueil .info fieldset div p:first-child{
+	font-size: 4rem;
+}
+.sec_accueil .info fieldset div p:nth-child(2){
+	font-size: 2rem;
+	font-family: 'altice-regular';
+	position: relative;
+	bottom: .8rem;
 }
 .sec_accueil .sticker{
 	position: relative;
@@ -218,12 +237,12 @@ main{
 }
 .sec_accueil .sticker .promo .up{
 	position: relative;
-	top: 2.2rem;
-	left: 9rem;
+	top: 2.5rem;
+	left: 10.5rem;
 	display: flex;
 }
 .sec_accueil .sticker .promo .up p{
-	font-size: 10rem;
+	font-size: 9.3rem;
 	color: var(--color-secondary);
 }
 .sec_accueil .sticker .promo .up span:first-of-type{
@@ -231,28 +250,31 @@ main{
 	top: 0rem;
 	left: 0.7rem;
 	font-size: 5rem;
-	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: 'diamante-serial-bold';
+	font-weight: 400;
+	color: var(--color-secondary);
 }
 .sec_accueil .sticker .promo .up span:nth-child(3){
 	align-self: flex-end;
 	position: relative;
-	right: 3.5rem;
-	bottom: 2rem;
-	font-size: 2rem;
+	right: 2.1rem;
+	bottom: 2.1rem;
+	font-size: 2.5rem;
+	color: var(--color-secondary);
 }
 .sec_accueil .sticker .promo .inscription{
 	position: relative;
 	top: 1rem;
-	left: 8.5rem;
-	font-size: 1.5rem;
-	font-family: "circular", 'sans-serif';
+	left: 10rem;
+	font-size: 1.2rem;
+	font-family: 'altice-regular';
 	color: var(--color-tertiaire);
 	letter-spacing: 0.05rem;
 	margin-bottom: 0.7rem;
 }
 .sec_accueil .sticker .promo .all{
 	position: relative;
-	top: 2.7rem;
+	top: 4rem;
 	left: 4rem;
 }
 .sec_accueil .sticker .promo .all .engagement{
@@ -260,8 +282,7 @@ main{
 	gap: 2rem;
 }
 .sec_accueil .sticker .promo .all .engagement .mois{
-	font-size: 1.4rem;
-	letter-spacing:.1rem;
+	font-size: 1.3rem;
 	color: var(--color-white);
 	background-color: var(--color-tertiaire);
 	border-radius: 10rem;
@@ -269,12 +290,13 @@ main{
 	position: relative;
 	bottom: 0.2rem;
 	padding: 0.5rem 3rem;
+	font-family: 'altice-bold';
 }
 .sec_accueil .sticker .promo .all .sans{
-	margin-left: .75rem;
-	line-height: 1.5rem;
-	letter-spacing: 0.15rem;
-	font-size: 1.7rem;
+	margin-left: 1rem;
+	font-size: 1.3rem;
+	font-family: 'altice-bold';
+	color: var(--color-tertiaire);
 }
 .sec_accueil .sticker .promo .all .abon{
 	position: relative;
@@ -297,6 +319,7 @@ main{
 	position: relative;
 	top: 5rem;
 	left: 6rem;
+	color: var(--color-tertiaire);
 }
 .sec_accueil .sticker .promo .all .offre::after{
 	content: "";
@@ -314,37 +337,39 @@ main{
 
 /* Description */
 .sec_description{
-	margin: 4rem 18rem;
+	margin: 4rem 0rem 0rem 20rem;
 }
 .sec_description h2{
 	font-size: 3.5rem;
 	text-transform: uppercase;
+	color: var(--color-secondary);
+	font-family: 'diamante-serial-bold';
+	font-weight: lighter;
 }
 .sec_description .devices{
 	display: flex;
 	height: 4rem;
-    margin: 4rem 0rem 2.5rem 0rem;
+    margin: 3rem 0rem 2.5rem 0rem;
 }
 .sec_description .devices img{
 	margin-right: 15px;
-}
-.sec_description .ticks{
-
-	font-weight: 400;
-	font-size: 1.5rem;
 }
 .sec_description aside{
 	display: flex;
 	gap: 2rem;
 	margin: 2rem 5rem 1.5rem 0rem;
 	width: 100%;
+	
+}
+.sec_description p{
+	font-family: 'altice-regular';
 }
 .sec_description aside p{
 	margin-right: 2.5rem;
 	position: relative;
-	font-family: sans-serif;
-	font-size: 1.35rem;
+	font-size: 1.2rem;
 	font-style: normal;
+	font-family: 'altice-regular';
 }
 .sec_description aside p:first-child{
 	margin-left: 2.3rem;
@@ -366,29 +391,29 @@ main{
 	margin-left: 1.25rem;
 }
 .sec_description aside:nth-child(2) p:nth-child(3){
-	margin-left: .5rem;
+	margin-left: 1rem;
 }
 .sec_description aside:first-child p:nth-child(3){
 	margin-left: 1.8rem;
 }
 .sec_description aside:nth-child(2) p:nth-child(2){
-	margin-left: 1.75rem;
+	margin-left: 2.2rem;
 }
 .paragraphe_1{
 	margin: 3rem 0rem 2rem 0rem;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	font-family: sans-serif;
 	text-align: justify;
 }
 .paragraphe_2{
 	margin-bottom: 2rem;
 	font-family: sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 }
 .paragraphe_3{
 	margin-bottom: 2rem;
 	font-family: sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 }
 
 
@@ -398,8 +423,10 @@ main{
 	background-color: #f9f7f7;
 }
 .teaser h2{
-	padding: 7rem 0rem 4rem 17rem;
+	padding: 7rem 0rem 4rem 19rem;
 	text-transform: uppercase;
+	color: var(--color-secondary);
+	font-size: 2rem;
 }
 .teaser video{
 	width: 100%;
@@ -429,9 +456,9 @@ main{
 	background-color: var(--color-tertiaire);
 	color: var(--color-white);
 	text-transform: uppercase;
-	font-family: "Diamante-serial", sans-serif;
+	font-family: "Diamante-serial-bold", sans-serif;
 	padding: .5rem 1rem;
-
+	font-size: 1.35rem;
 }
 .announcement .mma aside:nth-child(2) div p:nth-child(2) {
 	margin-left: 2rem;
@@ -468,8 +495,9 @@ main{
 	background-color: var(--color-red);
 	color: var(--color-white);
 	text-transform: uppercase;
-	font-family: "Diamante-serial", sans-serif;
+	font-family: "Diamante-serial-bold", sans-serif;
 	padding: .5rem 1rem;
+	font-size: 1.35rem;
 }
 .announcement .foot aside:nth-child(2) div p:nth-child(2) {
 	margin-left: 2rem;
@@ -513,9 +541,9 @@ main{
 	background-color: var(--color-red);
 	color: var(--color-white);
 	text-transform: uppercase;
-	font-family: "Diamante-serial", sans-serif;
+	font-family: "Diamante-serial-bold", sans-serif;
 	padding: .5rem 1rem;
-
+	font-size: 1.35rem;
 }
 .announcement .boxe aside:nth-child(2) div p:nth-child(2) {
 	margin-left: 2rem;
@@ -555,13 +583,13 @@ main{
 	align-items: center;
 }
 .announcement .boxe_2 aside:nth-child(2) div p:first-child{
-	margin-left: -4.4rem;
+	margin-left: -6.2rem;
 	background-color: var(--color-red);
 	color: var(--color-white);
 	text-transform: uppercase;
-	font-family: "Diamante-serial", sans-serif;
+	font-family: "Diamante-serial-bold", sans-serif;
 	padding: .5rem 1rem;
-
+	font-size: 1.35rem;
 }
 .announcement .boxe_2 aside:nth-child(2) div p:nth-child(2) {
 	margin-left: 2rem;
@@ -600,13 +628,13 @@ main{
 	align-items: center;
 }
 .announcement .boxe_3 aside:nth-child(2) div p:first-child{
-	margin-left: 3rem;
+	margin-left: -.7rem;
 	background-color: var(--color-tertiaire);
 	color: var(--color-white);
 	text-transform: uppercase;
-	font-family: "Diamante-serial", sans-serif;
+	font-family: "Diamante-serial-bold", sans-serif;
 	padding: .5rem 1rem;
-
+	font-size: 1.35rem;
 }
 .announcement .boxe_3 aside:nth-child(2) div p:nth-child(2) {
 	margin-left: 2rem;
@@ -752,8 +780,8 @@ main{
 	margin: 1rem 5rem;
 }
 .price .stickers1 .up p{
-	font-size: 8rem;
-	margin: 0rem 3rem;
+	font-size: 7rem;
+	margin: 0rem 3rem ;
 	position: relative;
 	color: var(--color-secondary);
 }
