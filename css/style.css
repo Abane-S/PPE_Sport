@@ -17,7 +17,7 @@ html {
 
 body {
 	font-size: 1.6rem;
-	font-family: "Diamante-serial", sans-serif;
+	font-family: 'diamante-serial-bold', sans-serif;
 	margin: 0;
 }
 
@@ -770,9 +770,6 @@ main{
 	bottom: 7.5rem;
 	left: 8.5rem;
 	font-size: 2rem;
-}
-.price .stickers1 .inscription{
-
 }
 
 /* 2eme sticker */
