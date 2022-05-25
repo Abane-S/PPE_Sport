@@ -1,10 +1,10 @@
 @font-face{
 	font-family: 'diamante-serial-bold';
-	src: url('/font/Diamante-serial-bold.ttf');
+	src: url('/font/diamanteserial-bold.woff2') format('woff');
 }
 @font-face {
 	font-family: 'diamante-serial-regular';
-	src: url('/font/Diamante-Serial-Regular.ttf');
+	src: url('/font/diamante-serial-regular.woff') format('woff');
 }
 @font-face {
 	font-family: 'altice-regular';
@@ -14,9 +14,10 @@
 	font-family: 'altice-bold';
 	src: url('/font/altice-bold-webfont.woff') format('woff');
 }
-
-
-
+@font-face {
+	font-family: 'odibee-san';
+	src: url('/font/odibee-sans.regular.ttf');
+}
 /*reset*/
 
 html {
@@ -247,10 +248,10 @@ main{
 }
 .sec_accueil .sticker .promo .up span:first-of-type{
 	position: relative;
-	top: 0rem;
-	left: 0.7rem;
-	font-size: 5rem;
-	font-family: 'diamante-serial-bold';
+	top: 1.2rem;
+	left: .3rem;
+	font-size: 4rem;
+	font-family: 'odibee-san', sans-serif;
 	font-weight: 400;
 	color: var(--color-secondary);
 }
@@ -426,6 +427,7 @@ main{
 	padding: 7rem 0rem 4rem 19rem;
 	text-transform: uppercase;
 	color: var(--color-secondary);
+	font-family: 'diamante-serial-bold';
 	font-size: 2rem;
 }
 .teaser video{
@@ -462,7 +464,7 @@ main{
 }
 .announcement .mma aside:nth-child(2) div p:nth-child(2) {
 	margin-left: 2rem;
-	color: var(--color-tertiaire);
+	color: var(--color-secondary);
 	font-family: sans-serif;
 	font-size: 1rem;
 	text-transform: uppercase;
@@ -476,6 +478,7 @@ main{
 	margin-top: .3rem;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
+	color: var(--color-secondary);
 }
 
 /* 2eme */
@@ -501,7 +504,7 @@ main{
 }
 .announcement .foot aside:nth-child(2) div p:nth-child(2) {
 	margin-left: 2rem;
-	color: var(--color-tertiaire);
+	color: var(--color-secondary);
 	font-family: sans-serif;
 	font-size: 1rem;
 	text-transform: uppercase;
@@ -515,6 +518,7 @@ main{
 	margin-top: .3rem;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
+	color: var(--color-secondary);
 }
 .announcement .foot aside:nth-child(2) p:last-child{
 	margin: 1rem 3rem;
@@ -522,6 +526,7 @@ main{
 	font-family: sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
+	color: var(--color-secondary);
 }
 
 /* 3eme */
@@ -547,7 +552,7 @@ main{
 }
 .announcement .boxe aside:nth-child(2) div p:nth-child(2) {
 	margin-left: 2rem;
-	color: var(--color-tertiaire);
+	color: var(--color-secondary);
 	font-family: sans-serif;
 	font-size: 1rem;
 	text-transform: uppercase;
@@ -561,6 +566,7 @@ main{
 	margin-top: .3rem;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
+	color: var(--color-secondary);
 }
 .announcement .boxe aside:nth-child(2) p:last-child{
 	margin: 1rem 3rem;
@@ -568,6 +574,7 @@ main{
 	font-family: sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
+	color: var(--color-secondary);
 }
 
 /* 4eme */
@@ -593,7 +600,7 @@ main{
 }
 .announcement .boxe_2 aside:nth-child(2) div p:nth-child(2) {
 	margin-left: 2rem;
-	color: var(--color-tertiaire);
+	color: var(--color-secondary);
 	font-family: sans-serif;
 	font-size: 1rem;
 	text-transform: uppercase;
@@ -607,6 +614,7 @@ main{
 	margin-top: .3rem;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
+	color: var(--color-secondary);
 }
 .announcement .boxe_2 aside:nth-child(2) p:last-child{
 	margin: 1rem 3rem;
@@ -614,6 +622,7 @@ main{
 	font-family: sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
+	color: var(--color-secondary);
 }
 /* 5eme */
 .announcement .boxe_3 {
@@ -628,7 +637,7 @@ main{
 	align-items: center;
 }
 .announcement .boxe_3 aside:nth-child(2) div p:first-child{
-	margin-left: -.7rem;
+	margin-right: .5rem;
 	background-color: var(--color-tertiaire);
 	color: var(--color-white);
 	text-transform: uppercase;
@@ -638,7 +647,7 @@ main{
 }
 .announcement .boxe_3 aside:nth-child(2) div p:nth-child(2) {
 	margin-left: 2rem;
-	color: var(--color-tertiaire);
+	color: var(--color-secondary);
 	font-family: sans-serif;
 	font-size: 1rem;
 	text-transform: uppercase;
@@ -652,6 +661,7 @@ main{
 	margin-top: .3rem;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
+	color: var(--color-secondary);
 }
 .announcement .boxe_3 aside:nth-child(2) p:last-child{
 	margin: 1rem 3rem;
@@ -659,6 +669,7 @@ main{
 	font-family: sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
+	color: var(--color-secondary);
 }
 
 /* dicover */
@@ -684,9 +695,9 @@ main{
 	color: var(--color-secondary);
 }
 .discover aside:nth-child(2) p{
+	font-family: 'altice-regular', sans-serif;
+	font-size: 1.4rem;
 	line-height: 2rem;
-	font-family: sans-serif;
-	letter-spacing: .1rem;
 	text-align: center;
 	margin-bottom: 4rem;
 }
@@ -729,11 +740,12 @@ main{
 	margin-top: 1.5rem;
 }
 .available aside:nth-child(2) p{
-	line-height: 2rem;
 	font-family: sans-serif;
-	letter-spacing: .1rem;
 	text-align: center;
 	margin: 2rem 0rem 4rem;
+	font-family: 'altice-regular', sans-serif;
+	font-size: 1.4rem;
+	line-height: 2rem;
 }
 .available aside:nth-child(2) a{
 	padding: 1rem 3rem;
@@ -768,75 +780,126 @@ main{
 	background-image: url(/asset/bg3x.png);
     box-shadow: 1px 1px 10px 5px rgb(51 51 51 / 10%);
     background-repeat: no-repeat;
-	width: 20rem;
-	height: 30rem;
+	width: 19rem;
+	height: 28rem;
 	border: 2px solid var(--color-tertiaire);
 	background-position-x: -5rem;
     background-position-y: -5rem;
 	cursor: pointer;
 }
 .price .stickers1 img{
-	width: 8rem;
+	width: 7rem;
 	margin: 1rem 5rem;
 }
 .price .stickers1 .up p{
 	font-size: 7rem;
-	margin: 0rem 3rem ;
+	margin: -1rem 0rem 0rem 3.7rem;
 	position: relative;
 	color: var(--color-secondary);
 }
 .price .stickers1 .up span:first-of-type{
 	position: relative;
-	top: -10rem;
+	top: -8rem;
 	left: 10rem;
 	font-size: 3rem;
 	color: var(--color-secondary);
+	font-family: 'odibee-san', sans-serif;
 }
 .price .stickers1 .up span:nth-child(3){
 	position: relative;
 	color: var(--color-secondary);
-	bottom: 7.5rem;
+	bottom: 5.5rem;
 	left: 8.5rem;
 	font-size: 2rem;
+}
+.price .stickers1 .inscription{
+	margin: -5rem 0rem 0rem 2rem;
+	font-family: 'altice-regular';
+	font-size: 1.4rem;
+	color: var(--color-secondary);
+}
+.price .stickers1 .engagement{
+	margin: 0rem 2.6rem;
+	color: var(--color-tertiaire);
+	font-family: 'altice-bold';
+	font-size: 1.35rem;
+}
+.price .stickers1 .check{
+	border-radius: 50%;
+	height: 2rem;
+	width: 2rem;
+	border: .22rem solid var(--color-tertiaire);
+	margin: 6.2rem auto 0rem ;
+}
+.price .stickers1 .round{
+	border-radius: 50%;
+	height: 1.3rem;
+	width: 1.3rem;
+	margin: .17rem .17rem;
+	background-color: var(--color-tertiaire);
+	color: var(--color-tertiaire);
 }
 
 /* 2eme sticker */
 .price .stickers2{
 	background-image: url(/asset/bg3x.png);
     box-shadow: 1px 1px 10px 5px rgb(51 51 51 / 10%);
+	background-color: #fff;
     background-repeat: no-repeat;
-	width: 20rem;
-	height: 30rem;
+	width: 19rem;
+	height: 28rem;
 	border: 2px solid var(--color-tertiaire);
 	background-position-x: -5rem;
     background-position-y: -5rem;
 	cursor: pointer;
 }
 .price .stickers2 img{
-	width: 8rem;
-	margin: 0rem 8rem;
+	width: 7rem;
+	margin: 1rem 5rem 0rem;
 }
 .price .stickers2 .up p{
-	font-size: 8rem;
-	margin: 0rem 3rem;
+	font-size: 7rem;
+	margin: -.3rem 2.1rem 0rem;
 	position: relative;
 	color: var(--color-secondary);
 }
 .price .stickers2 .up span:first-of-type{
 	position: relative;
-	bottom: 9rem;
-	left: 11rem;
+	bottom: 8rem;
+	left: 9rem;
 	font-size: 3rem;
 	color: var(--color-secondary);
+	font-family: 'odibee-san', sans-serif;
 }
 .price .stickers2 .up span:nth-child(3){
 	position: relative;
 	color: var(--color-secondary);
-	bottom: 6.75rem;
-	left: 9.5rem;
+	bottom: 5.5rem;
+	left: 7.8rem;
 	font-size: 2rem;
 }
-
+.price .stickers2 .engagement p{
+	margin: -3rem auto auto 4rem;
+	color: var(--color-tertiaire);
+	font-family: 'altice-bold';
+	font-size: 1.35rem;
+}
+.price .stickers2 .check{
+	border-radius: 50%;
+	height: 2rem;
+	width: 2rem;
+	border: .22rem solid var(--color-tertiaire);
+	margin: 6.2rem auto 0rem ;
+}
+.price .stickers2 .round{
+	border-radius: 50%;
+	height: 1.3rem;
+	width: 1.3rem;
+	margin-top: -1.7rem; 
+	margin-left: .15rem;
+	background-color: var(--color-tertiaire);
+	color: var(--color-tertiaire);
+}
 
 /* 3eme sticker */
 .price .stickers3{
@@ -844,14 +907,14 @@ main{
     box-shadow: 1px 1px 10px 5px rgb(51 51 51 / 10%);
     background-repeat: no-repeat;
 	width: 30rem;
-	height: 30rem;
+	height: 28rem;
 	border: 2px solid var(--color-tertiaire);
 	background-position-x: -5rem;
     background-position-y: -5rem;
 	cursor: pointer;
 }
 .price .stickers3 img{
-	width: 8rem;
+	width: 7rem;
 	margin-top: 1rem;
 }
 .price .stickers3 img:nth-child(2){
@@ -864,22 +927,143 @@ main{
 	gap: 2rem;
 }
 .price .stickers3 .up p{
-	font-size: 8rem;
-	margin: 0rem 3rem;
+	font-size: 7rem;
+	margin: 0rem 0rem 0rem 7.9rem;
 	position: relative;
 	color: var(--color-secondary);
 }
 .price .stickers3 .up span:first-of-type{
 	position: relative;
-	top: -10rem;
-	left: 10rem;
+	top: -8rem;
+	left: 15rem;
 	font-size: 3rem;
 	color: var(--color-secondary);
+	font-family: 'odibee-san', sans-serif;
 }
 .price .stickers3 .up span:nth-child(3){
 	position: relative;
 	color: var(--color-secondary);
-	bottom: 7.5rem;
-	left: 8.5rem;
+	bottom: 5.5rem;
+	left: 13.7rem;
 	font-size: 2rem;
+}
+.price .stickers3 .inscription{
+	margin: -4.8rem 0rem 0rem 7.3rem;
+	font-family: 'altice-regular';
+	font-size: 1.4rem;
+	color: var(--color-secondary);
+}
+.price .stickers3 .engagement{
+	margin: 0rem 8.2rem;
+	color: var(--color-tertiaire);
+	font-family: 'altice-bold';
+	font-size: 1.35rem;
+}
+.price .stickers3 .check{
+	border-radius: 50%;
+	height: 2rem;
+	width: 2rem;
+	border: .22rem solid var(--color-tertiaire);
+	margin: 6.2rem auto 0rem ;
+}
+.price .stickers3 .round{
+	border-radius: 50%;
+	height: 1.3rem;
+	width: 1.3rem;
+	margin: .17rem .17rem;
+	background-color: var(--color-tertiaire);
+	color: var(--color-tertiaire);
+}
+.price a:last-of-type{
+	background-color: var(--color-tertiaire);
+	border: .3rem solid var(--color-tertiaire);
+	color: var(--color-white);
+	margin-top: 2.7rem;
+	margin-bottom: 10rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding: .9rem 3.3rem;
+	display: table;
+	text-transform: uppercase;
+}
+.price a:last-of-type:hover{
+	background-color: var(--color-white);
+	color: var(--color-tertiaire);
+}
+
+
+/* SFR */
+.sfr .bg{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: var(--color-white);
+}
+.sfr .bg{
+	background-image: linear-gradient(80deg, #9e0017, #f10101);
+	width: 100%;
+	height: 12rem;
+	max-width: 89rem;
+	margin: 0 auto 30rem auto;
+}
+.sfr .bg aside img{
+	width: 6.6rem;
+	margin-left: -3rem;
+}
+.sfr .bg aside:nth-child(2) h3{
+	font-size: 2.35rem;
+	position: relative;
+	right: 7.5rem;
+	bottom: .5rem;
+}
+.sfr .bg aside:nth-child(2) p{
+	font-size: 1.6rem;
+	font-family: 'altice-regular';
+	position: relative;
+	top: .8rem;
+	right: 4.7rem;
+}
+.sfr .bg aside:nth-child(3){
+	position: relative;
+	right: 8.8rem;
+}
+.sfr .bg aside:nth-child(3) .a{
+	font-family: 'altice-regular';
+	font-size: 1.3rem;
+	position: relative;
+	top: .8rem;
+}
+.sfr .bg aside:nth-child(3) div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: .7rem;
+}
+.sfr .bg aside:nth-child(3) div p:first-child{
+	font-size: 7rem;
+}
+.sfr .bg aside:nth-child(3) div p:nth-child(2){
+	font-size: 3rem;
+	position: relative;
+	bottom: .5rem;
+	left: .5rem;
+}
+.sfr .bg aside:nth-child(3) p:nth-child(3){
+	position: relative;
+	bottom: 2.25rem;
+	left: 3.8rem;
+	font-family: 'diamante-serial-regular';
+}
+.sfr .bg aside:last-child div{
+	position: absolute;
+}
+.sfr .bg aside:last-child a{
+	position: relative;
+	right: 11.5rem;
+	bottom: 0rem;
+	color: var(--color-white);
+	font-size: 1.7rem;
+	border: .15rem solid var(--color-white);
+	padding: 1rem 2.8rem;
 }
