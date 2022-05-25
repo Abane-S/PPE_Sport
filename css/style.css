@@ -217,11 +217,13 @@ main{
 	margin-left: 70%;
 
 }
-.sec_accueil .sticker .title h3{
+.sec_accueil .sticker .title p{
 	background-color: var(--color-secondary);
 	padding: 2rem 6.5rem;
 	position: absolute;
 	left: -4.4rem;
+	font-size: 1.86rem;
+	color: var(--color-white);
 }
 .sec_accueil .sticker .promo{
 	position: relative;
@@ -423,7 +425,7 @@ main{
 	margin : 5rem 0rem 0rem;
 	background-color: #f9f7f7;
 }
-.teaser h2{
+.teaser p{
 	padding: 7rem 0rem 4rem 19rem;
 	text-transform: uppercase;
 	color: var(--color-secondary);
@@ -473,12 +475,13 @@ main{
 	width: 5rem;
 	margin-left: 2rem;
 }
-.announcement .mma aside:nth-child(2) h3{
+.announcement .mma aside:nth-child(2) p{
 	margin-left: 3rem;
 	margin-top: .3rem;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
 	color: var(--color-secondary);
+	font-size: 2rem;
 }
 
 /* 2eme */
@@ -513,12 +516,13 @@ main{
 	width: 5rem;
 	margin-left: 2rem;
 }
-.announcement .foot aside:nth-child(2) h3{
+.announcement .foot aside:nth-child(2) p:nth-child(2){
 	margin-left: 3rem;
 	margin-top: .3rem;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
 	color: var(--color-secondary);
+	font-size: 2rem;
 }
 .announcement .foot aside:nth-child(2) p:last-child{
 	margin: 1rem 3rem;
@@ -561,12 +565,13 @@ main{
 	width: 5rem;
 	margin-left: 2rem;
 }
-.announcement .boxe aside:nth-child(2) h3{
+.announcement .boxe aside:nth-child(2) p:nth-child(2){
 	margin-left: 3rem;
 	margin-top: .3rem;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
 	color: var(--color-secondary);
+	font-size: 2rem;
 }
 .announcement .boxe aside:nth-child(2) p:last-child{
 	margin: 1rem 3rem;
@@ -590,7 +595,7 @@ main{
 	align-items: center;
 }
 .announcement .boxe_2 aside:nth-child(2) div p:first-child{
-	margin-left: -6.2rem;
+	margin-left: -4.7rem;
 	background-color: var(--color-red);
 	color: var(--color-white);
 	text-transform: uppercase;
@@ -609,12 +614,13 @@ main{
 	width: 5rem;
 	margin-left: 2rem;
 }
-.announcement .boxe_2 aside:nth-child(2) h3{
+.announcement .boxe_2 aside:nth-child(2) p:nth-last-child(2){
 	margin-left: 3rem;
 	margin-top: .3rem;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
 	color: var(--color-secondary);
+	font-size: 2rem;
 }
 .announcement .boxe_2 aside:nth-child(2) p:last-child{
 	margin: 1rem 3rem;
@@ -656,12 +662,13 @@ main{
 	width: 5rem;
 	margin-left: 2rem;
 }
-.announcement .boxe_3 aside:nth-child(2) h3{
+.announcement .boxe_3 aside:nth-child(2) p:nth-last-child(2){
 	margin-left: 3rem;
 	margin-top: .3rem;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
 	color: var(--color-secondary);
+	font-size: 2rem;
 }
 .announcement .boxe_3 aside:nth-child(2) p:last-child{
 	margin: 1rem 3rem;
@@ -761,11 +768,12 @@ main{
 
 
 /* price */
-.price h3{
+.price .title{
 	margin-top: 13rem;
 	text-align: center;
 	text-transform: uppercase;
 	color: var(--color-secondary);
+	font-size: 2rem;
 }
 
 /* 1er sticker */
@@ -985,6 +993,7 @@ main{
 	padding: .9rem 3.3rem;
 	display: table;
 	text-transform: uppercase;
+	transition: background-color 0.2s ease-out;
 }
 .price a:last-of-type:hover{
 	background-color: var(--color-white);
@@ -1004,28 +1013,28 @@ main{
 	width: 100%;
 	height: 12rem;
 	max-width: 89rem;
-	margin: 0 auto 30rem auto;
+	margin: 11.7rem auto 5rem auto;
 }
 .sfr .bg aside img{
 	width: 6.6rem;
-	margin-left: -3rem;
+	position: relative;
+	right: 3.15rem;
 }
 .sfr .bg aside:nth-child(2) h3{
-	font-size: 2.35rem;
+	font-size: 2.5rem;
 	position: relative;
-	right: 7.5rem;
-	bottom: .5rem;
+	right: 9.5rem;
+	bottom: .3rem;
 }
 .sfr .bg aside:nth-child(2) p{
 	font-size: 1.6rem;
 	font-family: 'altice-regular';
 	position: relative;
-	top: .8rem;
-	right: 4.7rem;
+	right: 8.4rem;
 }
 .sfr .bg aside:nth-child(3){
 	position: relative;
-	right: 8.8rem;
+	right: 14.8rem;
 }
 .sfr .bg aside:nth-child(3) .a{
 	font-family: 'altice-regular';
@@ -1038,7 +1047,7 @@ main{
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	top: .7rem;
+	top: .8rem;
 }
 .sfr .bg aside:nth-child(3) div p:first-child{
 	font-size: 7rem;
@@ -1060,10 +1069,274 @@ main{
 }
 .sfr .bg aside:last-child a{
 	position: relative;
-	right: 11.5rem;
+	right: 16.5rem;
 	bottom: 0rem;
 	color: var(--color-white);
 	font-size: 1.7rem;
 	border: .15rem solid var(--color-white);
 	padding: 1rem 2.8rem;
+	transition: background-color 0.2s ease-out;
+}
+.sfr .bg aside:last-child a:hover{
+	background-color: var(--color-white);
+	color: var(--color-red);
+}
+
+/* PassSport */
+.PassSport{
+	margin-top: 2rem;
+}
+.PassSport .bgd{
+	background-image: url(/asset/bgr/landing_rmcbein-v4.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+	padding-bottom: 3.8rem;
+    background-position: center center;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6rem;
+	margin-bottom: 6rem;
+	padding-top: 2rem;
+	padding-right: 55rem;
+}
+.PassSport .bgd aside:first-child{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.PassSport .bgd aside:first-child img:first-child{
+	width: 8rem;
+}
+.PassSport .bgd aside:first-child p{
+	font-size: 4rem;
+	color: var(--color-white);
+	font-weight: 900;
+}
+.PassSport .bgd aside:first-child img:nth-child(3){
+	width: 8rem;
+}
+.PassSport .bgd aside:nth-child(2){
+	color: var(--color-white);
+	position: relative;
+	right: .5rem;
+}
+.PassSport .bgd aside:nth-child(2) h4{
+	color: var(--color-white);
+	font-size: 2.6rem;
+}
+.PassSport .bgd aside:nth-child(2) h5{
+	font-size: 1.8rem;
+	position: relative;
+	bottom: 2.4rem;
+}
+.PassSport .bgd aside:nth-child(2) p{
+	font-size: 1.29rem;
+	font-family: 'altice-regular';
+	position: relative;
+	bottom: 4.2rem;
+}
+.PassSport .bgd aside:nth-child(2) a{
+	color: var(--color-white);
+	border: .15rem solid var(--color-white);
+	padding: .7rem 4.3rem;
+	position:relative;
+	bottom: 2rem;
+	transition: background-color 0.2s ease-out;
+}
+.PassSport .bgd aside:nth-child(2) a:hover{
+	color: var(--color-tertiaire);
+	background-color: var(--color-white);
+}
+
+/* application */
+.application{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3.5rem;
+	margin-bottom: 6.3rem;
+	margin-right: 4rem;
+}
+.application aside:first-child img{
+	width: 33rem;
+}
+.application aside:nth-child(2) p:first-child{
+	font-size: 2.05rem;
+	color: var(--color-secondary);
+	text-transform: uppercase;
+}
+.application aside:nth-child(2) p:nth-child(2){
+	font-family: 'altice-regular';
+	font-size: 1.4rem;
+	margin: 1.5rem 0rem 4.5rem 0rem;
+}
+.application aside:nth-child(2) .app{
+	width: 9.3rem;
+}
+.application aside:nth-child(2) .play{
+	width: 11.3rem;
+}
+
+/* why sub */
+.access{
+	margin-bottom: 4.7rem;
+	background-color: #f9f7f7;
+	padding-bottom: 5.7rem;
+}
+.access .c{
+	font-size: 2rem;
+	text-align: center;
+	color: var(--color-secondary);
+	padding-top: 5rem;
+	margin-bottom: 3rem;
+}
+.access .b{
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+.access .b aside img{
+	width: 4.8rem;
+}
+.access .b aside p:first-of-type{
+	color: var(--color-secondary);
+	font-family: 'altice-bold';
+	font-weight: 900;
+	font-size: 1.4rem;
+	margin: 1.5rem 0rem;
+}
+.access .b aside p:nth-of-type(2){
+	font-family: 'altice-regular';
+	font-size: 1.2rem;
+}
+.access .b aside:nth-child(3) img{
+	width: 3rem;
+}
+.access .b aside:nth-child(4) img{
+	width: 3.5rem;
+}
+
+/* Speech */
+.speech{
+	
+}
+.speech aside:first-child p:first-of-type{
+	color: var(--color-secondary);
+	font-size: 2.05rem;
+	margin: 0rem 20rem; 
+}
+.speech aside p:nth-child(2){
+	font-family: 'altice-regular';
+	font-size: 14px;
+	margin: 1.5rem 20rem;
+	text-align: justify;
+	letter-spacing: -0.05rem;
+	line-height: 1.57;
+	color: #323232;
+}
+.speech aside:nth-child(2) p:first-of-type{
+	color: var(--color-secondary);
+	margin: 3rem 0rem 2rem 20rem;
+	font-size: 2.05rem;
+	text-transform: uppercase;
+}
+.speech aside:nth-child(2) p:nth-child(2){
+	margin-bottom: 3.2rem;
+}
+.speech aside:nth-child(2) span{
+	color: #333333;
+	margin-left: 20rem;
+	letter-spacing: -0.03px;
+	font-size: 1.2rem;
+	font-family: 'altice-bold';
+}
+
+/* asterisk */
+.asterisk{
+	padding: 2.3rem 20rem;
+	margin-top: 4.7rem;
+	background-color: #fafafa;;
+}
+.asterisk aside p:first-child{
+	font-family: 'altice-bold';
+	font-size: 1.2rem;
+}
+.asterisk aside p:nth-child(2){
+	font-family: 'altice-regular';
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+	line-height: 1.2rem;
+}
+
+/* FOOTER */
+footer{
+	background-color: var(--color-secondary);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5rem 0rem;
+}
+footer aside:first-child{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	left: 5.2rem;
+	bottom: .8rem;
+}
+footer aside:first-child a img{
+	width: 8.5rem;
+}
+footer aside:first-child span{
+	color: var(--color-white);
+	font-family: 'altice-regular';
+	font-size: 1.1rem;
+	position: relative;
+	top: 2rem;
+}
+footer aside:nth-child(2){
+	display: flex;
+	gap: 4rem;
+	font-family: 'altice-regular';
+	font-size: 1.3rem;
+	padding-left: 6.4rem;
+}
+footer aside:nth-child(2) ul li a{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	gap: 10rem;
+}
+footer aside:nth-child(2) ul{
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+footer aside:nth-child(2) li a{
+	color: var(--color-white);
+}
+footer aside:nth-child(3) ul{
+	display: flex;
+	margin-right: 1.2rem;
+}
+footer aside:nth-child(3) ul li{
+	display: flex;
+	flex-direction: row;
+}
+footer aside:nth-child(3) ul li a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--color-white);
+}
+footer aside:nth-child(3) ul li a img{
+	width: 4.5rem;
+}
+footer aside:nth-child(3) ul li a span{
+	font-family: 'altice-regular';
+	font-size: 1.3rem;
+	padding-right: 1rem;
+	padding-left: .5rem;
 }
