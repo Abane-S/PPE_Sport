@@ -1218,9 +1218,6 @@ main{
 }
 
 /* Speech */
-.speech{
-	
-}
 .speech aside:first-child p:first-of-type{
 	color: var(--color-secondary);
 	font-size: 2.05rem;
