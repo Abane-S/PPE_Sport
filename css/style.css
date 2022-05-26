@@ -94,6 +94,14 @@ header ul li a{
 	font-size: 1.35rem;
 	letter-spacing: .05rem;
 }
+header ul li button{
+	color: var(--color-header);
+	font-size: 1.35rem;
+	letter-spacing: .05rem;
+	font-family: 'diamante-serial-bold';
+	text-transform: uppercase;
+	background-color: var(--color-primary);
+}
 header ul li span:hover{
 	padding-bottom: 0.15rem;
 	border-bottom: 0.2rem solid var(--color-tertiaire);
@@ -102,29 +110,68 @@ header ul li span:hover{
 header ul li a:hover{
 	color: var(--color-tertiaire);
 }
+header ul li button:hover{
+	color: var(--color-tertiaire);
+	cursor: pointer;
+}
 header ul li.offre{
 	position: relative;
 	margin-right: 2.4rem;
+	height: 1rem;
 }
-header ul li.offre a::after{
-	content: '';
+header ul li.offre .i::after{
+	content: "";
 	position: absolute;
-    width: 7px;
-    height: 7px;
-    border: 2px solid #c3c3c3;
-    top: 0.25rem;
+	top: .2rem;
 	left: 7rem;
-    transform: rotate(45deg);
-    border-left: none;
-    border-top: none;
-}
-header ul li.offre:hover a::after{
-	border: 2px solid var(--color-tertiaire);
+	width: .8rem;
+	height: .8rem;
+	border: .2rem solid var(--color-header);
+	transform: rotate(45deg);
 	border-left: none;
-    border-top: none;
+	border-top: none;
+
 }
-header ul li.offre:hover li.offre{
+header ul li:hover .i::after{
+	border: .2rem solid var(--color-tertiaire);
+	border-left: none;
+	border-top: none;
+}
+header ul .offre ul{
+	display: none;
+	background-color: var(--color-white);
+	box-shadow: 0px 10px 17px -6px #c3c3c3;
+	width: 32rem;
+	height: 11.5rem;
+	margin-left: -11.4rem;
+	position: fixed;
+	top: 5rem;
+	padding: 10px 5px 0px 25px;
+}
+
+/* Dropdown */
+header .active li.offre button {
 	color: var(--color-tertiaire);
+}
+header .active li.offre .i::after{
+	border: .2rem solid var(--color-tertiaire);
+	top: .5rem;
+	border-right: none;
+	border-bottom: none;
+}
+header .active .offre ul {
+	display: block;
+}
+
+
+header ul .offre ul li a{
+	display: block;
+	text-align: left;
+	font-family: 'Altice-Bold';
+	text-transform: none;
+	line-height: 18px;
+	margin-bottom: 15px;
+	transition: color 0.2s ease-out;
 }
 header ul li.connecter a{
 	color: var(--color-tertiaire);
@@ -294,12 +341,15 @@ main{
 	bottom: 0.2rem;
 	padding: 0.5rem 3rem;
 	font-family: 'altice-bold';
+	cursor: pointer;
 }
 .sec_accueil .sticker .promo .all .sans{
 	margin-left: 1rem;
 	font-size: 1.3rem;
 	font-family: 'altice-bold';
 	color: var(--color-tertiaire);
+	background-color: var(--color-white);
+	cursor: pointer;
 }
 .sec_accueil .sticker .promo .all .abon{
 	position: relative;
@@ -318,13 +368,13 @@ main{
 	color: var(--color-tertiaire);
 	transition: background-color 0.2s ease-out;
 }
-.sec_accueil .sticker .promo .all .offre{
+.sec_accueil .sticker .promo .all .offres{
 	position: relative;
 	top: 5rem;
 	left: 6rem;
 	color: var(--color-tertiaire);
 }
-.sec_accueil .sticker .promo .all .offre::after{
+.sec_accueil .sticker .promo .all .offres::after{
 	content: "";
 	height: 0.8rem;
 	width: 0.8rem;

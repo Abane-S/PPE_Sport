@@ -1,0 +1,23 @@
+{
+  "name": "ppe-sport",
+  "version": "1.0.0",
+  "description": "[Voir le lien du site](https://abane1.github.io/PPE_Sport/)",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel --no-babelrc src -w -d js --preset=env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abane1/PPE_Sport.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abane1/PPE_Sport/issues"
+  },
+  "homepage": "https://github.com/abane1/PPE_Sport#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}

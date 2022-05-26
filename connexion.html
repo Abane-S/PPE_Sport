@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/connexion.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./asset/icon/rmcsport-logo.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>      
+    <title>RMC Sport | Se connecter</title>
+</head>
+    <body>
+        <header>
+            <a href="https://www.rmcsport.tv/"><img src="/asset/icon/rmc-logo-desktop.png" alt="logo rmc"></a>
+        </header>
+        <main>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Entrez votre indentifiant" id="username" autocomplete="off">
+                <input type="password" name="password" id="password" placeholder="Mot de passe">
+                <div class="error-pane1 " style="display: none;">
+                    <p> toogle en php </p>
+                </div>
+                <a href="https://espace-client.sfr.fr/gestion-securite/mot-de-passe/oublie/identifiant#sfrclicid=EC_mire_oubli-mdp"> <span> Mot de passe oublié ?</span></a>        
+            </form>
+
+            <aside class="connexion">
+                <label for="connecté">Rester connecté</label>
+            </aside>
+            <aside class="recaptcha">
+                <form action="?" method="POST">
+                    <div class="g-recaptcha" data-sitekey="6LdVWkAgAAAAAB9e3wggX92US4laplgMy0weG_a9"></div>
+                    <br/>
+                    <input type="submit" value="Submit">
+                </form>
+            </aside>
+            <aside>
+                <input type="submit" name="se connecter" id="connexion" value="se connecter">
+                <a href="/index.html">Annuler</a>
+            </aside>
+        </main>            
+        <footer>
+            <a href="https://www.rmcsport.tv/aide.html" target="_blank">Besoin d'aide ?</a>
+        </footer>
+    </body>
+</html>
