@@ -5,3 +5,4 @@ TODO.txt
 package-lock.json
 package.json
 .vscode
+verify.php
