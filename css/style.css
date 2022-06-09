@@ -1,6 +1,6 @@
 @font-face{
 	font-family: 'diamante-serial-bold';
-	src: url('/font/diamanteserial-bold.woff2') format('woff');
+	src: url('/font/diamanteserial-bold.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'diamante-serial-regular';
