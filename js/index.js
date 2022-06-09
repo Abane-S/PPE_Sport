@@ -51,9 +51,11 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(days, hours, minutes, seconds);
 
         jours.textContent = days;
-        heures.textContent = "0" + hours;
+        heures.textContent = hours;
         minute.textContent = minutes;
         secondes.textContent = seconds;
+
+        console.log(days, hours, minutes, secondes);
     }
 
     const countDownInterval = setInterval(() => {
